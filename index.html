@@ -1,0 +1,247 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>IA y Derechos de Autor en el Arte</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+    <style>
+      .feature-img {
+        width: 100%;
+        max-width: 220px;
+        border-radius: 12px;
+        display: block;
+        margin: 0 auto 20px auto;
+      }
+
+      #audio-controls-container {
+        margin-top: 18px;
+        display: flex;
+        justify-content: center;
+      }
+
+      #audio-controls {
+        display: flex;
+        gap: 6px;
+        padding: 10px 16px;
+        background: linear-gradient(135deg, #6a0dad, #b026ff, #ff66cc);
+        border-radius: 16px;
+        box-shadow: 0 0 16px rgba(255, 0, 180, 0.5);
+      }
+
+      #audio-controls button {
+        background: rgba(130,130,130,0.35);
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        padding: 8px 13px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 600;
+        transition: 0.25s ease;
+        backdrop-filter: blur(6px);
+      }
+
+      #audio-controls button:hover {
+        background: rgba(255,255,255,0.45);
+        transform: scale(1.08);
+        box-shadow: 0 0 10px rgba(255,255,255,0.35);
+      }
+.clickable-img img {
+  transition: 0.3s ease, transform 0.2s ease;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+}
+
+.clickable-img:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(176, 38, 255, 0.6);
+  cursor: pointer;
+  border: 2px solid #b026ff;
+}
+
+      .back-to-top {
+        display: inline-block;
+        padding: 10px 22px;
+        color: #ff66cc;
+        font-weight: 700;
+        text-decoration: none;
+        border-radius: 12px;
+        border: 1px solid rgba(255, 102, 204, 0.6);
+        background: rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(8px);
+        transition: 0.3s ease, transform 0.2s ease;
+        font-size: 16px;
+        margin: 40px 0;
+      }
+
+      .back-to-top:hover {
+        background: rgba(255, 255, 255, 0.1);
+        color: #b026ff;
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 6px 20px rgba(176, 38, 255, 0.5);
+      }
+    </style>
+
+  </head>
+  <body class="is-preload">
+
+    <div id="wrapper">
+
+      <header id="header" class="alt">
+        <span class="logo"><img src="images/arteIA.jpg" alt="IA y Arte" /></span>
+        <h1>Autor Invisible, IA en el Arte</h1>
+        <p>Una exploración crítica sobre inteligencia artificial, creatividad y propiedad intelectual en el arte contemporáneo.</p>
+      </header>
+
+      <nav id="nav">
+        <ul>
+          <li><a href="#intro" class="active">Introducción</a></li>
+          <li><a href="#impacto">Impacto</a></li>
+          <li><a href="#legal">Legalidad</a></li>
+          <li><a href="entrevistas.html">Entrevistas</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+        </ul>
+      </nav>
+
+      <div id="main">
+
+        <section id="intro" class="main">
+          <div class="spotlight">
+            <div class="content">
+              <header class="major">
+                <h2>La revolución creativa</h2>
+              </header>
+              <p>
+                La llegada de la inteligencia artificial generativa cambió para siempre la forma en que producimos arte, música,
+                guiones, imágenes y obras audiovisuales. La pregunta ya no es si la IA reemplazará al artista, sino qué significa
+                crear en un mundo donde las máquinas pueden generar ideas, estilos o voces humanas.
+              </p>
+
+              <div id="audio-controls-container">
+                <div id="audio-controls">
+                  <button onclick="player.playVideo()">▶︎</button>
+                  <button onclick="player.pauseVideo()">⏸</button>
+                  <button onclick="player.stopVideo()">⏹</button>
+                  <button onclick="player.seekTo(player.getCurrentTime() - 5)">-5s</button>
+                  <button onclick="player.seekTo(player.getCurrentTime() + 5)">+5s</button>
+                </div>
+              </div>
+
+            </div>
+           <span class="image">
+  <a href="https://aws.amazon.com/es/what-is/generative-ai/" target="_blank" class="clickable-img">
+    <img src="images/ia1.jpg" alt="IA generativa" />
+  </a>
+</span>
+
+
+          </div>
+        </section>
+
+        <section id="impacto" class="main special">
+          <header class="major">
+            <h2>Impacto en la creación artística</h2>
+            <p>¿Cómo afecta realmente la IA al proceso creativo?</p>
+          </header>
+          <ul class="features">
+
+            <li>
+              <img src="IA6.jpg" class="feature-img" alt="Transformación del proceso IA">
+              <h3>Transformación del proceso</h3>
+              <p>
+                La IA permite generar ideas, imágenes, sonidos y guiones en segundos, acelerando proyectos creativos
+                y ampliando las herramientas del artista.
+              </p>
+            </li>
+
+            <li>
+              <img src="IA4.jpg" class="feature-img" alt="Nuevas estéticas IA">
+              <h3>Nuevas estéticas</h3>
+              <p>
+                Los modelos generativos crean estilos híbridos imposibles en técnicas tradicionales, pero también abren debates sobre autenticidad y autoría.
+              </p>
+            </li>
+
+            <li>
+              <img src="IA5.jpg" class="feature-img" alt="Riesgos éticos IA">
+              <h3>Riesgos éticos</h3>
+              <p>
+                La originalidad, la desinformación visual y la pérdida del proceso creativo humano son algunos de los dilemas más fuertes.
+              </p>
+            </li>
+
+          </ul>
+        </section>
+
+        <section id="legal" class="main special">
+          <header class="major">
+            <h2>¿Quién es el autor?</h2>
+            <p>
+              Las leyes aún están intentando ponerse al día con la tecnología. En muchos países, las obras generadas por IA no pueden considerarse totalmente protegidas por derechos de autor si no hay intervención humana significativa.
+            </p>
+          </header>
+
+         <p class="major">
+  Los debates legales actuales giran en torno a si la IA debe ser considerada: herramienta creativa, coautora o simplemente no titular de derechos. La mayoría de marcos legales establecen que solo los humanos pueden ser autores, pero el nivel de intervención es clave.
+</p>
+
+
+
+
+
+          <footer class="major">
+            <ul class="actions special">
+              <li><a href="https://www.youtube.com/watch?v=xZXBQjv_g8g&t=50s" class="button" target="_blank">Ver recursos legales</a></li>
+            </ul>
+          </footer>
+        </section>
+
+      </div>
+
+      <div style="text-align:center; margin: 40px 0;">
+        <a href="#header" class="back-to-top">↑ Volver arriba</a>
+      </div>
+
+      <footer id="footer">
+        <section></section>
+      </footer>
+
+    </div>
+
+    <div style="width:1px; height:1px; overflow:hidden;">
+      <div id="ytplayer"></div>
+    </div>
+
+    <script>
+      let player;
+
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('ytplayer', {
+          height: '1',
+          width: '1',
+          videoId: 'Asz94oMVmRY',
+          playerVars: {
+            autoplay: 0,
+            controls: 0,
+            modestbranding: 1
+          }
+        });
+      }
+
+      const tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      document.body.appendChild(tag);
+    </script>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>
